@@ -13,10 +13,10 @@ class Post(models.Model):
 	class Meta:
 		ordering = ['-created']
 
-		#returns unicode obj
-		def_unicode_(self):
-			return u'%s' % self.title
+	#returns unicode obj
+	def __unicode__(self):
+		return u'%s' % self.title
 
-		#links to specific post
-		def get_absolute(self):
-			return reverse('blog.views.post', args=[self.slug])
+	#links to specific post
+	def get_absolute_url(self):
+		return reverse('blog.views.post', args=[self.slug])

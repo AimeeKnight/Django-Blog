@@ -9,7 +9,7 @@ class PostAdmin(admin.ModelAdmin):
 	#fields to search in change list
 	search_fields = ['title', 'description', 'content']
 	#enable the date drill down on change list
-	#date_hierarchy = 'created'
+	date_hierarchy = 'created'
 	#enable the save buttons on top on change form
 	save_on_top = True
 	#prepopulate the slug from the title

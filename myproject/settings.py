@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+from settings_secret import *
 import os
 
 BASE_DIR = os.path.dirname(__file__)
@@ -21,7 +22,6 @@ TEMPLATE_DIRS = (
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'rm=6j8&dpgthnb=$zs+cdob-(wz!f_*+&h+i)8d%a&^yi4%z9d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

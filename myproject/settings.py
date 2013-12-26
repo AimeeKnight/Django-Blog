@@ -24,9 +24,9 @@ TEMPLATE_DIRS = (
 # SECURITY WARNING: keep the secret key used in production secret!
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -65,6 +65,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'HOST':    'ec2-54-197-237-231.compute-1.amazonaws.com',
+        'DATABASE':   'deda8a2sdtr57b',
+        'USER':    'werccczkvxtnrw',
+        'PORT':    '5432',
+        'PASSWORD:': 'KNaGGgevgePYQgieEkeiQCNIPa',
     }
 }
 
@@ -89,6 +94,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+
 
 # Parse database configuration from $DATABASE_URL
 import dj_database_url

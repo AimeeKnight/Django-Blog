@@ -1,3 +1,5 @@
 .DS_Store
 settings_secret.py
-settings_secret.pyc
+venv
+*.pyc
+staticfiles
